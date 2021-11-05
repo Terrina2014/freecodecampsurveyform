@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freecodecamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="title-container">
+    <h1 id="title"> Academia Fashion Survey Form</h1>
+    <p id="description"> Here is a survey form about which academia fashion you prefer</p>
+    </div>
+
+    <div class="container">
+    <form id="survey-form" action="#">
+        
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" class="form-control" placeholder="Name here please" id="name-label" required>
+        </div>
+        
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" class="form-control" placeholder="Email here please" id="email-label" required>
+        </div>
+        
+        <div class="form-group">
+            <label id="number-label" for="number">Age (optional)</label>
+            <input type="number" class="form-control" min="0" max="120" placeholder="Age" id="number-label">
+        </div>
+        
+        <div class="form-group">
+            <p>Which option best describes your academia style?</p>
+            <select name="fashion" id="dropdown" class="form-control" required>
+            <option value="disabled selected value">Select an option</option>
+            <option value="light academia">Light Academia</option>
+            <option value="dark academia">Dark Academia</option>
+            <option value="both">Both Light and Dark Academia</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>Would you recommend Academia fashion to a friend?</p>
+            <label>
+            <input type="radio" id="maybe" name="fav_style" class="input-radio" value="maybe">
+             Maybe</label><br>
+            <label>
+            <input type="radio" id="not at all" name="fav_style" class="input-radio" value="not at all">
+             Not At All</label><br>
+            <label>
+            <input type="radio" id="not sure" name="fav_style" class="input-radio" value="not sure">
+            Not Sure</label>
+        </div>
+
+        <div class="form-group">
+            <p>What is your favorite thing about Academia?</p>
+        <select name="fashion" id="dropdown" class="form-control" required>
+            <option value="disabled selected value">Select an option</option>
+            <option value="clothes">The Clothes</option>
+            <option value="aesthetic">The Aesthetic</option>
+            <option value="price">The Price</option>
+            <option value="people">The People</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>What is your favorite Academia clothing item? (check all that apply)</p>
+            <input type="Checkbox" class="input-checkbox" name="shirt" value="yes" required>Shirt <br>
+            <input type="Checkbox" class="input-checkbox" name="sweater" value="yes">Sweater <br>
+            <input type="Checkbox" class="input-checkbox" name="cardigan" value="yes">Cardigan <br>
+            <input type="Checkbox" class="input-checkbox" name="pants" value="yes">Pants <br>
+            <input type="Checkbox" class="input-checkbox" name="skirt" value="yes">Skirt <br>
+            <input type="Checkbox" class="input-checkbox" name="shorts" value="yes">Shorts <br>
+            <input type="Checkbox" class="input-checkbox" name="purse" value="yes">Purse <br>
+            <input type="Checkbox" class="input-checkbox" name="belt" value="yes">belt <br>
+            <input type="Checkbox" class="input-checkbox" name="jewelry" value="yes">Jewelry
+        </div>
+
+        <div class="form-group">
+            <p>Any Comments or suggestions?</p>
+            <textarea name="text" id="textarea" cols="30" rows="10" placeholder="comments or suggetions"></textarea> 
+        </div>
+
+        <div class="form-group">
+            <button class="submit-button" type="submit">Submit</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
